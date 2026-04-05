@@ -4,7 +4,7 @@ import { useTasks } from "@/hooks/useTasks";
 import { AlertTriangle } from "lucide-react";
 
 export function ApiStatusBanner() {
-  const { isError, error } = useTasks();
+  const { isError } = useTasks();
 
   if (!isError) return null;
 

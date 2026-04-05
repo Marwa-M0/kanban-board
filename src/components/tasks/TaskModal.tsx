@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { useUIStore } from "@/store/uiStore";
 import { useCreateTask, useUpdateTask } from "@/hooks/useTasks";
 import { ColumnId, Priority, COLUMNS } from "@/types";
