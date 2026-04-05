@@ -83,19 +83,9 @@ npm install
 cp .env.local.example .env.local
 ```
 
-The default API URL is `http://localhost:4000`.
+The app is configured to use a live **MockAPI.io** endpoint by default. You can override this by setting `NEXT_PUBLIC_API_URL` in your `.env.local`.
 
-### 4. Start the mock API
-
-In a separate terminal:
-
-```bash
-npm run mock-api
-```
-
-This starts `json-server` on port 4000 using `db.json` as the database. All task CRUD operations persist to this file.
-
-### 5. Start the development server
+### 4. Start the development server
 
 ```bash
 npm run dev
