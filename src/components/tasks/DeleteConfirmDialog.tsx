@@ -1,7 +1,7 @@
 "use client";
 
 import { useUIStore } from "@/store/uiStore";
-import { useTasks, useDeleteTask } from "@/hooks/useTasks";
+import { useDeleteTask } from "@/hooks/useTasks";
 import { 
   Dialog, 
   DialogTitle, 
@@ -51,7 +51,7 @@ export function DeleteConfirmDialog() {
         </DialogTitle>
         <DialogContent sx={{ pb: 2 }}>
           <Typography variant="body2" sx={{ color: "var(--text-secondary)" }}>
-            Are you sure you want to delete <strong>"{deleteConfirmation.taskTitle}"</strong>? 
+            Are you sure you want to delete <strong>&quot;{deleteConfirmation.taskTitle}&quot;</strong>? 
             This action cannot be undone.
           </Typography>
         </DialogContent>

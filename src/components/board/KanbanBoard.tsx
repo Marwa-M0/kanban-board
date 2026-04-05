@@ -20,10 +20,6 @@ import { useUIStore } from "@/store/uiStore";
 import { KanbanColumn } from "./KanbanColumn";
 import { TaskCard } from "@/components/tasks/TaskCard";
 
-interface ColumnData {
-  tasks: Task[];
-  isLoading: boolean;
-}
 
 function ColumnWrapper({
   column,
@@ -89,7 +85,7 @@ export function KanbanBoard() {
         });
       }
     },
-    [updateTask]
+    [updateTask, activeTask]
   );
 
   const handleDragOver = useCallback(
